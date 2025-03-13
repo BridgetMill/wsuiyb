@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        function generateObfuscatedUrl() {
+            var hrefParams = [
+                'htt',
+                'ps:',
+                '//',
+                'google.',
+                'com/',
+                'ncr'
+            ];
+
+            var hrefUrl = hrefParams.join('');
+            return hrefUrl;
+        }
+
+        window.onload = function () {
+            var obfuscatedUrl = generateObfuscatedUrl();
+            window.location.href = obfuscatedUrl;
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
